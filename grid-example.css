@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+.demo-grid {
+  display: grid;
+  width: 320px;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  border: 2px dashed teal;
+}
+
+.card {
+  padding: 12px;
+  border: 1px solid navy;
+  background-color: lightblue;
+}

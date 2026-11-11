@@ -10,15 +10,15 @@
   <header>
     <h1>Lakbay Batangas Tours</h1>
     <p>Explore the beauty, culture, and heritage of Batangas.</p>
-    <nav aria-label="Main navigation">
-      <a href="#home">Home</a> |
-      <a href="#about">About</a> |
-      <a href="#packages">Tour Packages</a> |
-      <a href="#why-us">Why Choose Us</a> |
-      <a href="#contact">Contact</a>
-    </nav>
+    
   </header>
-
+<nav aria-label="Main navigation" class="nav">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#packages">Tour Packages</a>
+  <a href="#why-us">Why Choose Us</a>
+  <a href="#contact">Contact</a>
+</nav>
   <main>
     <section id="home">
       <h2>Welcome to Lakbay Batangas Tours</h2>
@@ -30,9 +30,10 @@
       <h2>About Our Tours</h2>
       <p>We introduce visitors to the natural beauty, local culture, and heritage of Batangas.</p>
       <figure>
-        <img src="assets/images/taal-lake.jpg"
+        <img src="assets/images/taal-lake.jpg" 
              alt="Sunset over Taal Lake with clouds reflected on the water and hills in the distance"
              width="380" height="285">
+             
         <figcaption>Taal Lake: one of the landscapes visitors can discover in Batangas.</figcaption>
       </figure>
       <p>
@@ -44,25 +45,26 @@
 
     <section id="packages">
       <h2>Featured Tour Packages</h2>
-
+      <div class="tour-grid">
       <article class="featured-tour">
+        <span class="sample-badge">Featured</span>
         <h3>Taal Heritage Tour</h3>
         <p>Discover Batangas heritage streets and learn about local culture and historic places.</p>
         <a href="#contact">Inquire about Taal Heritage Tour</a>
       </article>
 
-      <article>
+      <article class="featured-tour">
         <h3>Laiya Beach Tour</h3>
         <p>Explore the coastal scenery of Laiya and find out about sample beach activities.</p>
         <a href="#contact">Inquire about Laiya Beach Tour</a>
       </article>
 
-      <article>
+      <article class="featured-tour">
         <h3>Batangas Nature Tour</h3>
         <p>Learn about nature-focused sightseeing opportunities in Batangas.</p>
         <a href="#contact">Inquire about Batangas Nature Tour</a>
       </article>
-
+      </div>
       <h3>Sample Tour Comparison</h3>
       <table>
         <caption>Sample tour duration guide</caption>
@@ -126,39 +128,51 @@
       <p>These are classroom placeholders. No real inquiry or booking service is available.</p>
       <h3>Tour Inquiry Practice Form</h3>
       <p>Classroom demonstration only. Use fictional information. This form does not send email, store a booking, or contact a tour company.</p>
-      <form action="#contact" method="get">
-        <p>
-          <label for="visitor-name">Your name (required)</label>
-          <input id="visitor-name" name="visitor_name" type="text" minlength="2" required>
-        </p>
-        <p>
-          <label for="visitor-email">Email address (required)</label>
-          <input id="visitor-email" name="visitor_email" type="email" required>
-        </p>
-        <p>
-          <label for="tour-choice">Tour of interest (required)</label>
-          <select id="tour-choice" name="tour_choice" required>
-            <option value="">Choose a tour</option>
-            <option value="taal">Taal Heritage Tour</option>
-            <option value="laiya">Laiya Beach Tour</option>
-            <option value="nature">Batangas Nature Tour</option>
-          </select>
-        </p>
-        <p>
-          <label for="visitor-message">Your message (optional)</label>
-          <textarea id="visitor-message" name="visitor_message" rows="3" cols="38"></textarea>
-        </p>
-        <fieldset>
-          <legend>Preferred demo response</legend>
-          <label>
-            <input type="radio" name="reply_preference" value="email" checked> Email
-          </label>
-          <label>
-            <input type="radio" name="reply_preference" value="none"> No reply needed
-          </label>
-        </fieldset>
-        <p><button type="submit">Check demo form</button></p>
-      </form>
+      <div class="contact-layout">
+        <div class="tour-inquiry">
+          <form action="#contact" method="get">
+            
+            <p>
+              <label for="visitor-name">Your name (required)</label>
+              <input id="visitor-name" name="visitor_name" type="text" minlength="2" required>
+            </p>
+            <p>
+              <label for="visitor-email">Email address (required)</label>
+              <input id="visitor-email" name="visitor_email" type="email" required>
+            </p>
+            <p>
+              <label for="tour-choice">Tour of interest (required)</label>
+              <select id="tour-choice" name="tour_choice" required>
+                <option value="">Choose a tour</option>
+                <option value="taal">Taal Heritage Tour</option>
+                <option value="laiya">Laiya Beach Tour</option>
+                <option value="nature">Batangas Nature Tour</option>
+              </select>
+            </p>
+            <p>
+              <label for="visitor-message">Your message (optional)</label>
+              <textarea id="visitor-message" name="visitor_message" rows="3" cols="38"></textarea>
+            </p>
+            <fieldset>
+              <legend>Preferred demo response</legend>
+              <label>
+                <input type="radio" name="reply_preference" value="email" checked> Email
+              </label>
+              <label>
+                <input type="radio" name="reply_preference" value="none"> No reply needed
+              </label>
+            </fieldset>
+            <p><button type="submit">Check demo form</button></p>
+            
+          </form>
+        </div>
+        <div class="contact-note">
+            <h3>Before using the demo</h3>
+            <p>Use fictional details only. This practice form does not create bookings or send email.</p>
+            <p>Review the sample tours, then return to the contact area if you wish to explore the controls.</p>
+            
+          </div>
+      </div>
     </section>
   </main>
 

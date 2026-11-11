@@ -1,0 +1,59 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #17354c;
+  background: #f4f8fa;
+}
+
+main { max-width: 850px; margin: 0 auto; }
+.instructions { margin-bottom: 24px; }
+
+.tour-card {
+  position: relative;        /* Anchors the absolute label on wide layouts */
+  padding: 56px 20px 20px;   /* Leaves room at the top for the label */
+  border: 2px solid #003e4c;
+  border-radius: 12px;
+  background: #ffcc66;
+}
+
+.tour-label {
+  position: absolute;        /* Wide layout: label floats in the top-right */
+  top: 12px;
+  right: 20px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: #003e4c;
+  color: #fff;
+}
+
+.tour-card h2 { margin-top: 0; }
+a { color: #003e4c; text-decoration: underline; }
+a:focus-visible { outline: 3px solid #8b2cb5; outline-offset: 4px; }
+#contact { margin-top: 32px; }
+
+/* At narrow viewport widths (including high browser zoom):
+   this is the exact idea in the Week 14 Day 2 slide. */
+@media (max-width: 48rem) {
+  .tour-label {
+    position: static;
+    display: inline-block;
+  }
+
+  .tour-card {
+    padding-top: 16px;
+  }
+}
+@media (max-width: 48rem) {
+  .tour-label {
+    position: static;
+    display: inline-block;
+  }
+
+  .tour-card {
+    padding-top: 16px;
+  }
+}

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lakbay Batangas Tours</title>
+  <link rel="stylesheet" href="css/week13act_reference.css">
+</head>
+<body>
+  <header>
+    <h1>Lakbay Batangas Tours</h1>
+    <p>Explore the beauty, culture, and heritage of Batangas.</p>
+  </header>
+
+  <nav aria-label="Main navigation" class="nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#packages">Tour Packages</a>
+    <a href="#why-us">Why Choose Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h2>Welcome to Lakbay Batangas Tours</h2>
+      <p>Find a tour that suits your interests and discover memorable places in our province.</p>
+      <p><a href="#packages">Explore our tour packages</a></p>
+    </section>
+
+    <section id="about">
+      <h2>About Our Tours</h2>
+      <p>We introduce visitors to the natural beauty, local culture, and heritage of Batangas.</p>
+      <figure>
+        <img src="assets/images/taal-lake.jpg"
+             alt="Sunset over Taal Lake with clouds reflected on the water and hills in the distance"
+             width="380" height="285">
+        <figcaption>Taal Lake: one of the landscapes visitors can discover in Batangas.</figcaption>
+      </figure>
+      <p>Photo by Talynhaga.
+        <a href="https://commons.wikimedia.org/wiki/File:Taal_Lake.jpg">Image source</a> |
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>
+      </p>
+    </section>
+
+    <section id="packages">
+      <h2>Featured Tour Packages</h2>
+      <div class="tour-grid">
+        <article class="tour-card featured-tour">
+          <span class="sample-badge">Featured</span>
+          <h3>Taal Heritage Tour</h3>
+          <p>Discover Batangas heritage streets and learn about local culture and historic places.</p>
+          <a href="#contact">Inquire about Taal Heritage Tour</a>
+        </article>
+        <article class="tour-card">
+          <h3>Laiya Beach Tour</h3>
+          <p>Explore the coastal scenery of Laiya and find out about sample beach activities.</p>
+          <a href="#contact">Inquire about Laiya Beach Tour</a>
+        </article>
+        <article class="tour-card">
+          <h3>Batangas Nature Tour</h3>
+          <p>Learn about nature-focused sightseeing opportunities in Batangas.</p>
+          <a href="#contact">Inquire about Batangas Nature Tour</a>
+        </article>
+      </div>
+      <h3>Sample Tour Comparison</h3>
+      <table>
+        <caption>Sample tour duration guide</caption>
+        <thead><tr><th scope="col">Tour Package</th><th scope="col">Example Duration</th><th scope="col">Inquiry</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Taal Heritage Tour</th><td>Half day</td><td><a href="#contact">Ask for details</a></td></tr>
+          <tr><th scope="row">Laiya Beach Tour</th><td>One day</td><td><a href="#contact">Ask for details</a></td></tr>
+          <tr><th scope="row">Batangas Nature Tour</th><td>One day</td><td><a href="#contact">Ask for details</a></td></tr>
+        </tbody>
+      </table>
+      <p>These durations are examples for classroom comparison, not confirmed tour schedules.</p>
+      <h3>What to Bring</h3>
+      <ul><li>Comfortable walking shoes</li><li>Drinking water</li><li>Hat or sun protection</li></ul>
+      <h3>How to Inquire</h3>
+      <ol>
+        <li>Read the descriptions of the available tours.</li>
+        <li>Choose the tour that interests you.</li>
+        <li>Use the Contact section to ask for details.</li>
+      </ol>
+    </section>
+
+    <section id="why-us">
+      <h2>Why Choose Us</h2>
+      <p>Our sample tour information is organized to help visitors compare options before making an inquiry.</p>
+      <ul><li>Clear descriptions of featured places</li><li>Local culture and heritage highlights</li><li>Simple navigation and inquiry links</li></ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Interested in a tour? You can ask for information about destinations and schedules.</p>
+      <p><strong>Sample email:</strong> <a href="mailto:tours@example.com">tours@example.com</a></p>
+      <p><strong>Sample phone:</strong> 0000-000-0000</p>
+      <p>These are classroom placeholders. No real inquiry or booking service is available.</p>
+      <h3>Tour Inquiry Practice Form</h3>
+      <p>Classroom demonstration only. Use fictional information. This form does not send email, store a booking, or contact a tour company.</p>
+      <div class="contact-layout">
+        <form action="#contact" method="get">
+          <p>
+            <label for="visitor-name">Your name (required)</label>
+            <input id="visitor-name" name="visitor_name" type="text" minlength="2" required>
+          </p>
+          <p>
+            <label for="visitor-email">Email address (required)</label>
+            <input id="visitor-email" name="visitor_email" type="email" required>
+          </p>
+          <p>
+            <label for="tour-choice">Tour of interest (required)</label>
+            <select id="tour-choice" name="tour_choice" required>
+              <option value="">Choose a tour</option>
+              <option value="taal">Taal Heritage Tour</option>
+              <option value="laiya">Laiya Beach Tour</option>
+              <option value="nature">Batangas Nature Tour</option>
+            </select>
+          </p>
+          <p>
+            <label for="visitor-message">Your message (optional)</label>
+            <textarea id="visitor-message" name="visitor_message" rows="3" cols="38"></textarea>
+          </p>
+          <fieldset>
+            <legend>Preferred demo response</legend>
+            <label><input type="radio" name="reply_preference" value="email" checked> Email</label>
+            <label><input type="radio" name="reply_preference" value="none"> No reply needed</label>
+          </fieldset>
+          <p><button type="submit">Check demo form</button></p>
+        </form>
+        <aside aria-labelledby="demo-note">
+          <h3 id="demo-note">Before using the demo</h3>
+          <p>Use fictional details only. This practice form does not create bookings or send email.</p>
+          <p>Review the sample tours, then return to the contact area if you wish to explore the controls.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Lakbay Batangas Tours | Web Development NC III classroom project.</p>
+    <p>Tour descriptions and contact details are examples for training.</p>
+  </footer>
+</body>
+</html>
